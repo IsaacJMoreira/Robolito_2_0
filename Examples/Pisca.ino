@@ -1,4 +1,4 @@
-#include <Robolito2.h>
+#include <Robolito.h>
 
 Robolito Bolt; //Cria o objeto Bolt do tipo Robolito
 
