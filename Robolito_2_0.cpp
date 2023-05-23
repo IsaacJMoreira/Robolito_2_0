@@ -1,5 +1,5 @@
                                                                                                    
-#include "Robolito.h"//O Header inclui as bibliotecas Servo.h e Ultrasound.h
+#include "Robolito_2_0.h"//O Header inclui as bibliotecas Servo.h e Ultrasound.h
 
 CRGB leds[4];//cria o objeto para controle dos LEDs RGB no assoalho do robô
 CRGB ledCabeca[6];//cria o objeto para controle dos LEDs da cabeça do robô
@@ -76,7 +76,7 @@ void Robolito::Espera(float tempo){
 void Robolito::Led(int NeoPixel, CRGB myRGBColor){
   leds[NeoPixel-1] = myRGBColor;
   Serial.print("Alterei a cor do RGB");
-  Serial.print(NeoPixel -1);
+  Serial.print(NeoPixel);
   Serial.println(".");
   FastLED.show();
 }
